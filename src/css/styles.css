@@ -13684,6 +13684,10 @@ html {
   /* hilangkan underline */
 }
 
+  .img-project {
+    height: 200px;
+    object-fit: cover;
+  }
 @media (min-width: 576px) {
   .blob-shape {
     width: 90%;
@@ -13695,6 +13699,11 @@ html {
     width: 80%;
     margin-bottom: 11rem;
   }
+  .img-project {
+    height: 200px;
+    object-fit: cover;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -13721,6 +13730,10 @@ html {
     width: 65%;
     margin-bottom: 18rem;
   }
+  .img-project {
+    height: 200px;
+    object-fit: cover;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -13733,5 +13746,10 @@ html {
   .blob-photo {
     width: 100%;
     margin-bottom: 14rem;
+  }  
+
+  .img-project {
+    height: 300px;
+    object-fit: cover;
   }
 }

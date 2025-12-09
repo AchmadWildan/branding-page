@@ -1,10 +1,19 @@
+import dashboardQc from '../assets/video/dashboard-qc.mp4';
+import timbanganMp4 from '../assets/video/timbangan.mp4';
+
 $(document).ready(function () {
+  const videoMap = {
+    'dashboard-qc': dashboardQc,
+    'timbangan': timbanganMp4,
+  };
+
   $("#videoModal").on("show.bs.modal", function (event) {
     // Ambil tombol pemicu modal
     var button = $(event.relatedTarget);
 
-    // Ambil URL video
-    var src = button.data("video");
+    // Ambil key atau URL video
+    var keyOrUrl = button.data("video");
+    var src = videoMap[keyOrUrl] || keyOrUrl;
 
     // Set video baru
     $("#videoSource").attr("src", src);
