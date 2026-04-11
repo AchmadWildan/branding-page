@@ -4,493 +4,800 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="Achmad Wildan - Software Developer & Data Analyst Portfolio" />
+    <meta name="author" content="Achmad Wildan" />
     <title>Achmad Wildan - Portofolio</title>
-    <!-- Favicon-->
     <!-- Custom Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-  <script type="module" crossorigin src="./assets/index-BlAPZYey.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-D14W5dwV.css">
+  <script type="module" crossorigin src="./assets/index-BLDOSogj.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-iPs1KdZi.css">
 </head>
 
 <body class="d-flex flex-column h-100">
-    <!-- welcome page -->
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top-btn" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
     <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-            <div class="container px-5">
-                <a class="navbar-brand" href="#index"><span class="fw-bolder text-primary">Achmad Portofolio</span></a>
+        <!-- ==============================
+             NAVBAR
+        ============================== -->
+        <nav class="navbar navbar-expand-lg navbar-custom py-3" id="mainNavbar">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#index">
+                    <div class="navbar-logo-avatar">AW</div>
+                    <span class="fw-bolder text-primary">Achmad<span class="text-gradient">.</span></span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="#index">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder gap-1">
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#index"
+                                data-section="index">Home</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#resume"
+                                data-section="resume">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#project"
+                                data-section="project">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#contact"
+                                data-section="contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Header-->
-        <header class="py-5">
-            <div class="container px-5 pb-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-xxl-5">
-                        <!-- Header text content-->
-                        <div class="text-center text-xxl-start">
-                            <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                                <div class="text-uppercase">Software &middot; Data &middot; Development</div>
+
+        <!-- ==============================
+             HERO / HEADER SECTION
+        ============================== -->
+        <header class="hero-section" id="index">
+            <div class="container px-4 px-lg-5">
+                <div class="row align-items-center min-vh-hero gx-5">
+                    <!-- Left: Text Content -->
+                    <div class="col-lg-6 hero-text-col">
+                        <div class="text-center text-lg-start hero-content">
+                            <!-- Availability Badge -->
+                            <div class="d-inline-flex align-items-center gap-2 hero-available-badge mb-3">
+                                <span class="available-dot"></span>
+                                <span class="small fw-semibold">Open to Collaboration</span>
                             </div>
-                            <div class="fs-3 fw-light text-muted">Halo 🙌, saya</div>
-                            <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Achmad
+
+                            <!-- Role Badge -->
+                            <div class="badge bg-gradient-primary-to-secondary text-white mb-3 fs-sm px-3 py-2">
+                                <span class="text-uppercase">Software &middot; AI &middot; Development</span>
+                            </div>
+
+                            <div class="fs-5 fw-light text-muted mb-1">Halo 🙌, saya</div>
+                            <h1 class="display-2 fw-bolder mb-2 lh-1"><span class="text-gradient d-inline">Achmad
                                     Wildan</span></h1>
-                            <div
-                                class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
-                                    href="#resume">Resume</a>
-                                <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
-                                    href="#project">Projects</a>
+
+                            <!-- Typing animation subtitle -->
+                            <div class="hero-typing-wrap mb-4">
+                                <span class="hero-typing-static fw-semibold text-muted">Seorang </span>
+                                <span class="hero-typing-cursor fw-bold" id="typingText"></span>
+                                <span class="typing-caret">|</span>
+                            </div>
+
+                            <!-- Tech Stack Icons -->
+                            <div class="hero-stack-row mb-4 justify-content-center justify-content-lg-start">
+                                <span class="stack-chip"><i class="bi bi-filetype-html"></i> HTML</span>
+                                <span class="stack-chip"><i class="bi bi-filetype-css"></i> CSS</span>
+                                <span class="stack-chip"><i class="bi bi-filetype-js"></i> JavaScript</span>
+                                <span class="stack-chip"><i class="bi bi-filetype-py"></i> Python</span>
+                                <span class="stack-chip"><i class="bi bi-filetype-php"></i> PHP</span>
+                                <span class="stack-chip"><i class="bi bi-database"></i> MySQL</span>
+                            </div>
+
+                            <!-- CTA Buttons -->
+                            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+                                <a class="btn btn-primary btn-lg px-4 py-3 fw-bolder hero-btn-primary" href="#resume">
+                                    <i class="bi bi-file-earmark-person me-2"></i>Resume
+                                </a>
+                                <a class="btn btn-hero-outline btn-lg px-4 py-3 fw-bolder" href="#project">
+                                    <i class="bi bi-grid me-2"></i>Projects
+                                </a>
+                            </div>
+
+                            <!-- Floating Stats -->
+                            <div class="hero-stats-row justify-content-center justify-content-lg-start">
+                                <div class="hero-stat-item">
+                                    <span class="hero-stat-num">2+</span>
+                                    <span class="hero-stat-label">Tahun Pengalaman</span>
+                                </div>
+                                <div class="hero-stat-divider"></div>
+                                <div class="hero-stat-item">
+                                    <span class="hero-stat-num">7+</span>
+                                    <span class="hero-stat-label">Proyek Selesai</span>
+                                </div>
+                                <!-- <div class="hero-stat-divider"></div>
+                                <div class="hero-stat-item">
+                                    <span class="hero-stat-num">3+</span>
+                                    <span class="hero-stat-label">Sertifikasi</span>
+                                </div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-7">
-                        <!-- Header profile picture-->
-                        <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                            <div class="blob-container">
-                                <div class="blob-shape"></div>
-                                <img class="blob-photo" src="./assets/Achmad_Wildan-CTQjOQ-4.png">
-                            </div>
+
+                    <!-- Right: Photo -->
+                    <div class="col-lg-6 d-flex justify-content-center mt-5 mt-lg-0">
+                        <div class="blob-container">
+                            <div class="blob-shape"></div>
+                            <img class="blob-photo" src="./assets/Achmad_Wildan-CTQjOQ-4.png" alt="Achmad Wildan">
                         </div>
                     </div>
                 </div>
+
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator text-center">
+                    <a href="#about" class="scroll-indicator-link">
+                        <i class="bi bi-chevron-down scroll-bounce"></i>
+                    </a>
+                </div>
             </div>
         </header>
-        <!-- About Section-->
-        <section class="bg-light py-5">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xxl-8">
-                        <div class="text-center my-5">
-                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-                            <p class="text-muted">Berpengalaman mengembangkan sistem IT untuk produksi dan gudang,
-                                termasuk dashboard OEE & downtime monitoring, aplikasi checkweigher, sistem penimbangan
-                                material, serta aplikasi kontrol pintu berbasis RFID. Juga memiliki ketertarikan dalam
-                                bidang data dan analisis untuk mendukung efisiensi operasional.</p>
-                            <div class="d-flex justify-content-center fs-2 gap-4">
-                                <a class="text-gradient" href="https://www.instagram.com/amad_wildan/" target="_blank">
+
+        <!-- ==============================
+             ABOUT ME SECTION
+        ============================== -->
+        <section class="about-section py-5" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center py-4 py-lg-5">
+                            <!-- Section Label -->
+                            <div class="section-label mb-3">
+                                <span class="section-label-text">Tentang Saya</span>
+                            </div>
+                            <h2 class="display-5 fw-bolder mb-4"><span class="text-gradient d-inline">About Me</span>
+                            </h2>
+
+                            <!-- Persona Tags -->
+                            <div class="persona-tags mb-4 justify-content-center">
+                                <span class="persona-tag"><span class="persona-icon">💡</span> Problem Solver</span>
+                                <span class="persona-tag"><span class="persona-icon">🛠️</span> System Builder</span>
+                                <span class="persona-tag"><span class="persona-icon">📊</span> Data Driven</span>
+                                <span class="persona-tag"><span class="persona-icon">🚀</span> Fast Learner</span>
+                            </div>
+
+                            <!-- Description points -->
+                            <div class="about-points text-start mx-auto mb-4">
+                                <div class="about-point">
+                                    <i class="bi bi-check-circle-fill about-check"></i>
+                                    <p class="mb-0">Berpengalaman membangun sistem IT untuk produksi & gudang, termasuk
+                                        dashboard OEE, downtime monitoring, dan aplikasi checkweigher.</p>
+                                </div>
+                                <div class="about-point">
+                                    <i class="bi bi-check-circle-fill about-check"></i>
+                                    <p class="mb-0">Mengembangkan sistem penimbangan material dan aplikasi kontrol pintu
+                                        berbasis RFID untuk lingkungan industri.</p>
+                                </div>
+                                <div class="about-point">
+                                    <i class="bi bi-check-circle-fill about-check"></i>
+                                    <p class="mb-0">Memiliki ketertarikan dalam bidang data & analisis untuk mendukung
+                                        efisiensi operasional perusahaan.</p>
+                                </div>
+                            </div>
+
+                            <!-- Social Pill Buttons -->
+                            <div class="social-pills justify-content-center">
+                                <a class="social-pill" href="https://www.instagram.com/amad_wildan/" target="_blank">
                                     <i class="bi bi-instagram"></i>
+                                    <span>Instagram</span>
                                 </a>
-                                <a class="text-gradient" href="https://www.linkedin.com/in/achmadwildan-/"
-                                    target="_blank"><i class="bi bi-linkedin"></i></a>
-                                <a class="text-gradient" href="https://github.com/AchmadWildan" target="_blank"><i
-                                        class="bi bi-github"></i></a>
+                                <a class="social-pill" href="https://www.linkedin.com/in/achmadwildan-/"
+                                    target="_blank">
+                                    <i class="bi bi-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a class="social-pill" href="https://github.com/AchmadWildan" target="_blank">
+                                    <i class="bi bi-github"></i>
+                                    <span>GitHub</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Projects Section -->
+
+        <!-- ==============================
+             PROJECTS SECTION (UNTOUCHED)
+        ============================== -->
         <section class="py-5" id="project">
             <div class="container px-5 mb-5">
                 <div class="text-center mb-5">
                     <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    <p class="text-muted mt-2 mb-0">Geser untuk melihat semua proyek</p>
                 </div>
-                <div class="row row-cols-1 row-cols-lg-3 g-4">
-                    <!-- Project Card 1-->
-                    <div class="col">
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 h-100">
-                            <img class="img-fluid w-100 img-project"
-                                src="./assets/dashboard_qc-WBQIhzkD.png" alt="Dashboard QC" />
-                            <div class="card-body p-4">
-                                <h2 class="fw-bolder mb-3">Monitoring Input QC</h2>
 
-                                <p class="mb-4 limit-text">Dashboard hasil input Quality Control (QC) pada area produksi digunakan untuk memantau hasil inspeksi produk secara real-time.</p>
+                <!-- Project Carousel Wrapper -->
+                <div class="project-carousel-wrapper">
+                    <!-- Nav Arrows -->
+                    <button class="proj-nav-btn proj-nav-prev" id="projPrev" aria-label="Previous">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button class="proj-nav-btn proj-nav-next" id="projNext" aria-label="Next">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
 
-                                <div class="d-flex flex-wrap gap-2 mb-4">
-                                    <span class="badge bg-secondary-bs p-2">#MySQL</span>
-                                    <span class="badge bg-secondary-bs p-2">#Laravel</span>
-                                    <span class="badge bg-secondary-bs p-2">#Soft UI</span>
+                    <!-- Track -->
+                    <div class="project-carousel-viewport" id="projectViewport">
+                        <div class="project-carousel-track" id="projectTrack">
+
+                            <!-- Card 1 -->
+                            <div class="project-slide">
+                                <div class="card project-card shadow rounded-4 border-0 h-100">
+                                    <div class="project-card-img-wrap">
+                                        <img class="img-fluid w-100 img-project" src="./assets/dashboard_qc-WBQIhzkD.png"
+                                            alt="Dashboard QC" />
+                                    </div>
+                                    <div class="card-body p-4 d-flex flex-column">
+                                        <h2 class="fw-bolder mb-2 project-title">Monitoring Input QC</h2>
+                                        <p class="mb-3 limit-text flex-grow-1">Dashboard hasil input Quality Control
+                                            (QC) pada area produksi digunakan untuk memantau hasil inspeksi produk
+                                            secara real-time.</p>
+                                        <div class="d-flex flex-wrap gap-2 mb-3">
+                                            <span class="badge bg-secondary-bs p-2">#MySQL</span>
+                                            <span class="badge bg-secondary-bs p-2">#Laravel</span>
+                                            <span class="badge bg-secondary-bs p-2">#Soft UI</span>
+                                        </div>
+                                        <button type="button" class="btn btn-primary btn-video w-100 mt-auto"
+                                            data-video="dashboard-qc" data-bs-toggle="modal"
+                                            data-bs-target="#videoModal" data-bs-keyboard="true">
+                                            <i class="bi bi-play-circle me-2"></i>Video Demo Project
+                                        </button>
+                                    </div>
                                 </div>
-
-                                <button type="button" class="btn btn-primary btn-video"
-                                    data-video="dashboard-qc" data-bs-toggle="modal"
-                                    data-bs-target="#videoModal" data-bs-keyboard="true">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>
-                                    Video Demo Project
-                                </button>
                             </div>
-                        </div>
+
+                            <!-- Card 2 -->
+                            <div class="project-slide">
+                                <div class="card project-card shadow rounded-4 border-0 h-100">
+                                    <div class="project-card-img-wrap">
+                                        <img class="img-fluid w-100 img-project" src="./assets/timbangan-F8-3qYKx.png"
+                                            alt="Auto Weighing App" />
+                                    </div>
+                                    <div class="card-body p-4 d-flex flex-column">
+                                        <h2 class="fw-bolder mb-2 project-title">Auto Weighing App</h2>
+                                        <p class="mb-3 limit-text flex-grow-1">Aplikasi ini dikembangkan untuk
+                                            mempermudah proses penimbangan produk secara digital, menggantikan metode
+                                            pencatatan yang sebelumnya dilakukan secara manual.</p>
+                                        <div class="d-flex flex-wrap gap-2 mb-3">
+                                            <span class="badge bg-secondary-bs p-2">#MySQL</span>
+                                            <span class="badge bg-secondary-bs p-2">#VB.Net</span>
+                                            <span class="badge bg-secondary-bs p-2">#Python</span>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-100 mt-auto"
+                                            data-video="timbangan" data-bs-toggle="modal" data-bs-target="#videoModal"
+                                            data-bs-keyboard="true">
+                                            <i class="bi bi-play-circle me-2"></i>Video Demo Project
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="project-slide">
+                                <div class="card project-card shadow rounded-4 border-0 h-100">
+                                    <div class="project-card-img-wrap">
+                                        <img class="img-fluid w-100 img-project" src="./assets/stories_app-BBWLNIGt.png"
+                                            alt="Stories App" />
+                                    </div>
+                                    <div class="card-body p-4 d-flex flex-column">
+                                        <h2 class="fw-bolder mb-2 project-title">Stories App</h2>
+                                        <p class="mb-3 limit-text flex-grow-1">Stories App adalah aplikasi berbasis web
+                                            untuk membuat, menampilkan, dan menghapus cerita. Aplikasi ini mendukung
+                                            unggah gambar, menyimpan cerita favorit, serta integrasi peta interaktif.
+                                            Proyek ini merupakan hasil submissions kelas Front-End Development pada
+                                            lanjutan beasiswa IDCamp - Dicoding 2025 tingkat mahir.</p>
+                                        <div class="d-flex flex-wrap gap-2 mb-3">
+                                            <span class="badge bg-secondary-bs p-2">#Restful API</span>
+                                            <span class="badge bg-secondary-bs p-2">#Auth</span>
+                                            <span class="badge bg-secondary-bs p-2">#Leaflet</span>
+                                        </div>
+                                        <a class="btn btn-primary w-100 mt-auto"
+                                            href="https://achmadwildan.github.io/stories-project-idcamp/"
+                                            target="_blank">
+                                            <i class="bi bi-box-arrow-up-right me-2"></i>Demo Project
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="project-slide">
+                                <div class="card project-card shadow rounded-4 border-0 h-100">
+                                    <div class="project-card-img-wrap">
+                                        <img class="img-fluid w-100 img-project" src="./assets/notes_app-CTGRwCxB.png"
+                                            alt="Notes App" />
+                                    </div>
+                                    <div class="card-body p-4 d-flex flex-column">
+                                        <h2 class="fw-bolder mb-2 project-title">Notes App</h2>
+                                        <p class="mb-3 limit-text flex-grow-1">Notes App merupakan aplikasi pencatatan
+                                            berbasis web dengan fitur CRUD, pencarian data, serta penyimpanan lokal.
+                                            Proyek ini merupakan hasil submissions kelas Front-End Development pada
+                                            beasiswa IDCamp - Dicoding 2024 tingkat menengah.</p>
+                                        <div class="d-flex flex-wrap gap-2 mb-3">
+                                            <span class="badge bg-secondary-bs p-2">#Restful API</span>
+                                            <span class="badge bg-secondary-bs p-2">#Javascript</span>
+                                            <span class="badge bg-secondary-bs p-2">#HTML</span>
+                                        </div>
+                                        <a class="btn btn-primary w-100 mt-auto"
+                                            href="https://achmadwildan.github.io/IDCamp2024-Menengah-NotesApp/"
+                                            target="_blank">
+                                            <i class="bi bi-box-arrow-up-right me-2"></i>Demo Project
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div class="project-slide">
+                                <div class="card project-card shadow rounded-4 border-0 h-100">
+                                    <div class="project-card-img-wrap">
+                                        <img class="img-fluid w-100 img-project" src="./assets/horman-DNpfT7by.png"
+                                            alt="Notes App" />
+                                    </div>
+                                    <div class="card-body p-4 d-flex flex-column">
+                                        <h2 class="fw-bolder mb-2 project-title">Kontrol Pintu Otomatis</h2>
+                                        <p class="mb-3 limit-text flex-grow-1">Kontrol Pintu Otomatis merupakan aplikasi
+                                            berbasis desktop dengan fitur kontrol pintu yang dikendalikan oleh admin dan
+                                            sistem interlock untuk keamanan.</p>
+                                        <div class="d-flex flex-wrap gap-2 mb-3">
+                                            <span class="badge bg-secondary-bs p-2">#VB.Net</span>
+                                            <span class="badge bg-secondary-bs p-2">#IoT</span>
+                                            <span class="badge bg-secondary-bs p-2">#RFID</span>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-100 mt-auto"
+                                            data-video="ControlHormann" data-bs-toggle="modal"
+                                            data-bs-target="#videoModal" data-bs-keyboard="true">
+                                            <i class="bi bi-play-circle me-2"></i>Video Demo Project
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 6 -->
+                            <div class="project-slide">
+                                <div class="card project-card shadow rounded-4 border-0 h-100">
+                                    <div class="project-card-img-wrap">
+                                        <img class="img-fluid w-100 img-project" src="./assets/dashboard_prod-C_lajzhh.jpeg"
+                                            alt="Dashboard Production AI" />
+                                    </div>
+                                    <div class="card-body p-4 d-flex flex-column">
+                                        <h2 class="fw-bolder mb-2 project-title">Dashboard Production AI</h2>
+                                        <p class="mb-3 limit-text flex-grow-1">Dashboard Production AI merupakan
+                                            aplikasi berbasis web yang terintegrasi dengan chatbot AI untuk membantu
+                                            user dalam mendapatkan informasi mengenai produksi. Dashboard ini memiliki
+                                            fitur report dan visualisasi data yang mencakup rekap harian produksi,
+                                            live status mesin dan kontrol pintu, serta OEE pada setiap Plant.</p>
+                                        <div class="d-flex flex-wrap gap-2 mb-3">
+                                            <span class="badge bg-secondary-bs p-2">#Python</span>
+                                            <span class="badge bg-secondary-bs p-2">#Flask</span>
+                                            <span class="badge bg-secondary-bs p-2">#HTML</span>
+                                        </div>
+                                        <!-- <button type="button" class="btn btn-primary w-100 mt-auto"
+                                            data-video="ControlHormann" data-bs-toggle="modal"
+                                            data-bs-target="#videoModal" data-bs-keyboard="true">
+                                            <i class="bi bi-play-circle me-2"></i>Video Demo Project
+                                        </button> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- /.project-carousel-track -->
+                    </div><!-- /.project-carousel-viewport -->
+
+                    <!-- Progress Bar -->
+                    <div class="proj-progress-bar-wrap">
+                        <div class="proj-progress-bar" id="projProgressBar"></div>
                     </div>
-                    <div class="col">
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 h-100">
-                            <img class="img-fluid w-100 img-project"
-                                src="./assets/timbangan-F8-3qYKx.png" alt="Auto Weighing App" />
-                            <div class="card-body p-4">
-                                <h2 class="fw-bolder mb-3">Auto Weighing App</h2>
 
-                                <p class="mb-4 limit-text">Aplikasi ini dikembangkan untuk mempermudah proses penimbangan produk secara digital, menggantikan metode pencatatan yang sebelumnya dilakukan secara manual.</p>
+                    <!-- Dot Indicators -->
+                    <div class="proj-dots" id="projDots" role="tablist" aria-label="Project slides"></div>
 
-                                <div class="d-flex flex-wrap gap-2 mb-4">
-                                    <span class="badge bg-secondary-bs p-2">#MySQL</span>
-                                    <span class="badge bg-secondary-bs p-2">#VB.Net</span>
-                                    <span class="badge bg-secondary-bs p-2">#Python</span>
-                                </div>
+                </div><!-- /.project-carousel-wrapper -->
+            </div>
+        </section>
 
-                                <button type="button" class="btn btn-primary" data-video="timbangan"
-                                    data-bs-toggle="modal" data-bs-target="#videoModal" data-bs-keyboard="true">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>
-                                    Video Demo Project
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 h-100">
-                            <img class="img-fluid w-100 img-project"
-                                src="./assets/stories_app-BBWLNIGt.png" alt="Dashboard QC" />
-                            <div class="card-body p-4">
-                                <h2 class="fw-bolder mb-3">Stories App</h2>
-
-                                <p class="mb-4 limit-text">Stories App adalah
-                                    aplikasi berbasis web untuk membuat, menampilkan, dan menghapus cerita.
-                                    Aplikasi ini mendukung unggah gambar, menyimpan cerita favorit, serta
-                                    integrasi peta interaktif. Proyek ini merupakan hasil submissions kelas Front-End
-                                    Development pada lanjutan beasiswa IDCamp - Dicoding 2025 tingkat mahir. </p>
-
-                                <div class="d-flex flex-wrap gap-2 mb-4">
-                                    <span class="badge bg-secondary-bs p-2">#Restful API</span>
-                                    <span class="badge bg-secondary-bs p-2">#Auth</span>
-                                    <span class="badge bg-secondary-bs p-2">#Leaflet</span>
-                                </div>
-
-                                <a type="button" class="btn btn-primary"
-                                    href="https://achmadwildan.github.io/stories-project-idcamp/" target="_blank">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>
-                                    Demo Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 h-100">
-                            <img class="img-fluid w-100 img-project"
-                                src="./assets/notes_app-CTGRwCxB.png" alt="Dashboard QC" />
-                            <div class="card-body p-4">
-                                <h2 class="fw-bolder mb-3">Notes App</h2>
-
-                                <p class="mb-4 limit-text">Notes App merupakan
-                                    aplikasi pencatatan berbasis web dengan fitur CRUD, pencarian data, serta
-                                    penyimpanan lokal. Proyek ini merupakan hasil submissions kelas Front-End
-                                    Development pada beasiswa IDCamp - Dicoding 2024 tingkat menengah.</p>
-
-                                <div class="d-flex flex-wrap gap-2 mb-4">
-                                    <span class="badge bg-secondary-bs p-2">#Restful API</span>
-                                    <span class="badge bg-secondary-bs p-2">#Javacsript</span>
-                                    <span class="badge bg-secondary-bs p-2">#HTML</span>
-                                </div>
-
-                                <a type="button" class="btn btn-primary"
-                                    href="https://achmadwildan.github.io/IDCamp2024-Menengah-NotesApp/" target="_blank">
-                                    <i class="bi bi-box-arrow-up-right me-2"></i>
-                                    Demo Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Modal Modern -->
-                    <div class="modal fade" id="videoModal" tabindex="-1">
-                        <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content video-wrapper">
-                                <div class="modal-body p-0 position-relative">
-
-                                    <video id="modalVideo" class="video-frame" controls>
-                                        <source id="videoSource" src="" type="video/mp4">
-                                    </video>
-
-                                </div>
-                            </div>
-                        </div>
+        <!-- Video Modal (outside carousel) -->
+        <div class="modal fade" id="videoModal" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content video-wrapper">
+                    <div class="modal-body p-0 position-relative">
+                        <video id="modalVideo" class="video-frame" controls>
+                            <source id="videoSource" src="" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Resume Section -->
-        <section class="bg-light py-5" id="resume">
-            <div class="container">
+        </div>
+
+        <!-- ==============================
+             RESUME SECTION
+        ============================== -->
+        <section class="resume-section py-5" id="resume">
+            <div class="container px-4 px-lg-5">
                 <div class="text-center mb-5">
+                    <div class="section-label mb-3"><span class="section-label-text">Karir & Pendidikan</span></div>
                     <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
                 </div>
+
                 <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Experience Section-->
-                        <section>
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h2 class="text-primary fw-bolder mb-0 mx-2">Experience</h2>
-                                <!-- Download resume button-->
-                                <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-primary p-2"
-                                    href="https://drive.google.com/file/d/1vZBdO9vBae7ddTEvHjqgs6d07aCLiLoY/view?usp=sharing"
-                                    target="_blank">
-                                    <div class="d-inline-block bi bi-download me-2"></div>
-                                    Download Resume
-                                </a>
-                            </div>
-                            <!-- Experience Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2024 - Present</div>
-                                                <div class="small fw-bolder">Staff IT Digital Application</div>
-                                                <div class="small text-muted">PT. Motasa Indonesia</div>
-                                                <div class="small text-muted">Mojokerto, Jawa Timur</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8">
-                                            <div>Mengembangkan dan memelihara sistem aplikasi digital untuk meningkatkan
-                                                efisiensi dan keamanan operasional perusahaan.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Experience Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2017 - 2019</div>
-                                                <div class="small fw-bolder">Freelance IT</div>
-                                                <div class="small text-muted">PT. Motasa Indonesia</div>
-                                                <div class="small text-muted">Mojokerto, Jawa Timur</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8">
-                                            <div>Mengembangkan dan mengintegrasikan data mesin menggunakan modul IoT
-                                                untuk
-                                                menganalisa performa dan efisiensi sistem.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Education Section-->
-                        <section>
-                            <h2 class="text-secondary fw-bolder mb-4">Education</h2>
-                            <!-- Education Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">Aug 2018 - Feb 2023</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">Institut Teknologi Sepuluh Nopember
-                                                    </div>
-                                                    <div class="small text-muted">Surabaya, Jawa Timur</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Bachelor</div>
-                                                    <div class="small text-muted">Mathematics</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8 limit-text">
-                                            <div>Dalam tugas akhir ini, saya menggunakan data survei UMKM di Surabaya
-                                                dengan
-                                                menerapkan algoritma K-Means Clustering untuk mengklasifikasikan
-                                                pengaruh
-                                                fintech terhadap UMKM. Penelitian ini melibatkan 53 sampel UMKM pada
-                                                rentang
-                                                tahun penjualan 2016-2021. Hasil survei menunjukkan bahwa 12 UMKM yang
-                                                menggunakan layanan fintech mengalami peningkatan omzet sebesar 36,21%
-                                                dalam
-                                                setahun.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Divider-->
-                        <div class="pb-5"></div>
-                        <!-- Skills Section-->
-                        <section>
-                            <!-- Skillset Card-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <!-- Professional skills list-->
-                                    <div class="mb-5">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div
-                                                class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                                                <i class="bi bi-tools"></i>
-                                            </div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional
-                                                    Skills</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0">
-                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                    Software
-                                                    Engineer</div>
-                                            </div>
-                                            <div class="col mb-4 mb-md-0">
-                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                    Data Analytics</div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                    System
-                                                    Development</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Languages list-->
-                                    <div class="mb-0">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div
-                                                class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                                                <i class="bi bi-code-slash"></i>
-                                            </div>
-                                            <h3 class="fw-bolder mb-0"><span
-                                                    class="text-gradient d-inline">Languages</span>
-                                            </h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0">
-                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML
-                                                </div>
-                                            </div>
-                                            <div class="col mb-4 mb-md-0">
-                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                    JavaScript</div>
-                                            </div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0">
-                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                    Python
-                                                </div>
-                                            </div>
-                                            <div class="col mb-4 mb-md-0">
-                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">PHP
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                    Visual
-                                                    Basic (.Net)
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
+                    <div class="col-lg-10 col-xl-9">
 
-            </div>
-        </section>
-        <!-- Contact Section -->
-        <section class="py-5" id="contact">
-            <div class="container px-5">
-                <div class="rounded-4 py-5 px-4 px-md-5">
-                    <div class="text-center mb-5">
-                        <h1 class="fw-bolder">Get in touch</h1>
-                        <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
-                    </div>
-                    <div class="row row-cols-1 row-cols-lg-4 g-4">
-                        <div class="col">
-                            <div class="card mx-auto overflow-hidden shadow rounded-4 border-0 w-100 h-100">
-                                <div class="card-body p-0">
-                                    <div class="p-4 d-flex flex-column align-items-center">
-                                        <div
-                                            class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
-                                            <i class="bi bi-envelope"></i>
-                                        </div>
-                                        <p class="text-center text-break">wildan044@gmail.com</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <!-- Download Button -->
+                        <div class="text-center mb-5">
+                            <a class="btn btn-primary px-4 py-3 fw-bolder resume-download-btn"
+                                href="https://drive.google.com/file/d/1F8v1YJCPP0NnPAO8qvs05WmZYoNwzS6s/view?usp=drive_link"
+                                target="_blank">
+                                <i class="bi bi-download me-2"></i>Download Resume (PDF)
+                            </a>
                         </div>
-                        <div class="col">
-                            <div class="card mx-auto overflow-hidden shadow rounded-4 border-0 w-100 h-100">
-                                <div class="card-body p-0">
-                                    <div class="p-4 d-flex flex-column align-items-center">
-                                        <div
-                                            class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
-                                            <i class="bi bi-telephone"></i>
-                                        </div>
-                                        <p>+62 859-1069-44674</p>
-                                    </div>
+
+                        <!-- === EXPERIENCE TIMELINE === -->
+                        <div class="resume-group mb-5">
+                            <div class="resume-group-header mb-4">
+                                <div class="resume-group-icon bg-gradient-primary"><i class="bi bi-briefcase-fill"></i>
                                 </div>
+                                <h2 class="fw-bolder mb-0">Experience</h2>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card mx-auto overflow-hidden shadow rounded-4 border-0 w-100 h-100">
-                                <div class="card-body p-0">
-                                    <div class="p-4 d-flex flex-column align-items-center">
-                                        <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
-                                            <a href="https://github.com/AchmadWildan" target="_blank">
-                                                <i class="bi bi-github"></i>
-                                            </a>
+
+                            <div class="timeline">
+                                <!-- Entry 1 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot pulse-dot"></div>
+                                    <div class="timeline-card">
+                                        <div class="timeline-card-header">
+                                            <div>
+                                                <h3 class="fw-bolder mb-1 fs-5">Staff IT Digital Application</h3>
+                                                <div class="timeline-company">
+                                                    <i class="bi bi-building me-1"></i>PT. Motasa Indonesia
+                                                    <span class="mx-2">·</span>
+                                                    <i class="bi bi-geo-alt me-1"></i>Mojokerto, Jawa Timur
+                                                </div>
+                                            </div>
+                                            <div class="timeline-badge">
+                                                <span class="badge-period">
+                                                    <i class="bi bi-calendar3 me-1"></i>2024 – Sekarang
+                                                </span>
+                                                <span class="badge-status">Full-time</span>
+                                            </div>
                                         </div>
-                                        <p class="text-center mb-0 text-break">https://github.com/AchmadWildan</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card mx-auto overflow-hidden shadow rounded-4 border-0 w-100 h-100">
-                                <div class="card-body p-0">
-                                    <div class="p-4 d-flex flex-column align-items-center">
-                                        <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
-                                            <a href="https://www.linkedin.com/in/achmadwildan-/"
-                                                target="_blank"><i class="bi bi-linkedin"></i></a>
-                                        </div>
-                                        <p class="text-center mb-0 text-break">https://www.linkedin.com/in/achmadwildan-
+                                        <p class="timeline-desc mt-3 mb-2">Mengembangkan dan memelihara sistem aplikasi
+                                            digital untuk meningkatkan efisiensi dan keamanan operasional perusahaan.
                                         </p>
+                                        <div class="timeline-highlights">
+                                            <span class="tl-highlight"><i class="bi bi-graph-up-arrow me-1"></i>OEE
+                                                Dashboard</span>
+                                            <span class="tl-highlight"><i class="bi bi-shield-check me-1"></i>RFID
+                                                Access</span>
+                                            <span class="tl-highlight"><i class="bi bi-clipboard-data me-1"></i>QC
+                                                Monitoring</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Entry 2 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-card">
+                                        <div class="timeline-card-header">
+                                            <div>
+                                                <h3 class="fw-bolder mb-1 fs-5">Freelance IT</h3>
+                                                <div class="timeline-company">
+                                                    <i class="bi bi-building me-1"></i>PT. Motasa Indonesia
+                                                    <span class="mx-2">·</span>
+                                                    <i class="bi bi-geo-alt me-1"></i>Mojokerto, Jawa Timur
+                                                </div>
+                                            </div>
+                                            <div class="timeline-badge">
+                                                <span class="badge-period">
+                                                    <i class="bi bi-calendar3 me-1"></i>2017 – 2019
+                                                </span>
+                                                <span class="badge-status badge-status-done">Contract</span>
+                                            </div>
+                                        </div>
+                                        <p class="timeline-desc mt-3 mb-2">Mengembangkan dan mengintegrasikan data mesin
+                                            menggunakan modul IoT untuk menganalisa performa dan efisiensi sistem.</p>
+                                        <div class="timeline-highlights">
+                                            <span class="tl-highlight"><i class="bi bi-cpu me-1"></i>IoT
+                                                Integration</span>
+                                            <span class="tl-highlight"><i class="bi bi-bar-chart me-1"></i>Data
+                                                Analysis</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- === EDUCATION TIMELINE === -->
+                        <div class="resume-group mb-5">
+                            <div class="resume-group-header mb-4">
+                                <div class="resume-group-icon bg-gradient-secondary"><i
+                                        class="bi bi-mortarboard-fill"></i></div>
+                                <h2 class="fw-bolder mb-0">Education</h2>
+                            </div>
+
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot timeline-dot-secondary"></div>
+                                    <div class="timeline-card">
+                                        <div class="timeline-card-header">
+                                            <div>
+                                                <h3 class="fw-bolder mb-1 fs-5">Institut Teknologi Sepuluh Nopember</h3>
+                                                <div class="timeline-company">
+                                                    <i class="bi bi-geo-alt me-1"></i>Surabaya, Jawa Timur
+                                                    <span class="mx-2">·</span>
+                                                    Bachelor of Mathematics
+                                                </div>
+                                            </div>
+                                            <div class="timeline-badge">
+                                                <span class="badge-period">
+                                                    <i class="bi bi-calendar3 me-1"></i>Aug 2018 – Feb 2023
+                                                </span>
+                                                <span class="badge-status badge-status-done">Lulus</span>
+                                            </div>
+                                        </div>
+                                        <p class="timeline-desc mt-3 mb-2 limit-text">Tugas akhir menggunakan data
+                                            survei UMKM di Surabaya dengan menerapkan algoritma K-Means Clustering untuk
+                                            mengklasifikasikan pengaruh fintech terhadap UMKM. Penelitian melibatkan 53
+                                            sampel UMKM pada rentang tahun penjualan 2016-2021. Hasil survei menunjukkan
+                                            bahwa 12 UMKM yang menggunakan layanan fintech mengalami peningkatan omzet
+                                            sebesar 36,21% dalam setahun.</p>
+                                        <div class="timeline-highlights">
+                                            <span class="tl-highlight"><i class="bi bi-bar-chart-steps me-1"></i>K-Means
+                                                Clustering</span>
+                                            <span class="tl-highlight"><i
+                                                    class="bi bi-calculator me-1"></i>Mathematics</span>
+                                            <span class="tl-highlight"><i class="bi bi-bank me-1"></i>FinTech
+                                                Research</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- === SKILLS === -->
+                        <div class="resume-group">
+                            <div class="resume-group-header mb-4">
+                                <div class="resume-group-icon bg-gradient-primary"><i class="bi bi-tools"></i></div>
+                                <h2 class="fw-bolder mb-0">Languages &amp; Tools</h2>
+                            </div>
+
+                            <div class="skills-card">
+                                <!-- Professional Skills -->
+                                <!-- <div class="mb-4">
+                                    <h5 class="fw-bolder mb-3 text-gradient d-inline-block">Professional Skills</h5>
+                                    <div class="skill-bar-list">
+                                        <div class="skill-bar-item">
+                                            <div class="skill-bar-label">
+                                                <span>Software Engineering</span>
+                                                <span class="skill-bar-level">Advanced</span>
+                                            </div>
+                                            <div class="skill-bar-track">
+                                                <div class="skill-bar-fill" data-width="85"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-bar-item">
+                                            <div class="skill-bar-label">
+                                                <span>Data Analytics</span>
+                                                <span class="skill-bar-level">Intermediate</span>
+                                            </div>
+                                            <div class="skill-bar-track">
+                                                <div class="skill-bar-fill" data-width="70"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-bar-item">
+                                            <div class="skill-bar-label">
+                                                <span>System Development (Industrial)</span>
+                                                <span class="skill-bar-level">Advanced</span>
+                                            </div>
+                                            <div class="skill-bar-track">
+                                                <div class="skill-bar-fill" data-width="80"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                <!-- Languages -->
+                                <div>
+                                    <!-- <h5 class="fw-bolder mb-3 text-gradient d-inline-block">Languages &amp; Technologies
+                                    </h5> -->
+                                    <div class="skill-chips-grid">
+                                        <div class="skill-chip-item">
+                                            <i class="bi bi-filetype-html"></i>
+                                            <span>HTML</span>
+                                        </div>
+                                        <div class="skill-chip-item">
+                                            <i class="bi bi-filetype-css"></i>
+                                            <span>CSS</span>
+                                        </div>
+                                        <div class="skill-chip-item">
+                                            <i class="bi bi-filetype-js"></i>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <div class="skill-chip-item">
+                                            <i class="bi bi-filetype-py"></i>
+                                            <span>Python</span>
+                                        </div>
+                                        <div class="skill-chip-item">
+                                            <i class="bi bi-filetype-php"></i>
+                                            <span>PHP / Laravel</span>
+                                        </div>
+                                        <div class="skill-chip-item">
+                                            <i class="bi bi-window-desktop"></i>
+                                            <span>VB.Net</span>
+                                        </div>
+                                        <div class="skill-chip-item">
+                                            <i class="bi bi-database-fill"></i>
+                                            <span>MySQL</span>
+                                        </div>
+                                        <div class="skill-chip-item">
+                                            <i class="bi bi-git"></i>
+                                            <span>Git</span>
+                                        </div>
+                                        <div class="skill-chip-item">
+                                            <i class="bi bi-cpu-fill"></i>
+                                            <span>IoT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ==============================
+             CONTACT SECTION
+        ============================== -->
+        <section class="contact-section py-5" id="contact">
+            <div class="container px-4 px-lg-5">
+                <!-- Hero CTA -->
+                <div class="contact-hero text-center mb-5">
+                    <div class="section-label mb-3"><span class="section-label-text">Get In Touch</span></div>
+                    <h1 class="display-5 fw-bolder mb-3">Tertarik Bekerja <span class="text-gradient">Sama?</span></h1>
+                    <p class="lead text-muted mb-4 mx-auto" style="max-width:520px">Saya selalu terbuka untuk peluang
+                        baru, kolaborasi, atau sekadar ngobrol tentang teknologi. Jangan ragu untuk menghubungi saya!
+                    </p>
+                    <a href="https://wa.me/6285910694674" target="_blank"
+                        class="btn btn-primary btn-lg px-5 py-3 fw-bolder contact-main-cta">
+                        <i class="bi bi-whatsapp me-2"></i>Kirim Pesan Sekarang
+                    </a>
+                </div>
+
+                <!-- Contact Cards -->
+                <div class="row g-4 justify-content-center">
+                    <!-- Email -->
+                    <div class="col-sm-6 col-lg-3">
+                        <a href="mailto:wildan044@gmail.com" class="contact-card text-decoration-none">
+                            <div class="contact-card-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div class="contact-card-label">Email</div>
+                            <div class="contact-card-value">wildan044@gmail.com</div>
+                            <div class="contact-card-arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
+                    </div>
+                    <!-- Phone -->
+                    <div class="col-sm-6 col-lg-3">
+                        <a href="https://wa.me/6285910694674" class="contact-card text-decoration-none" target="_blank">
+                            <div class="contact-card-icon">
+                                <i class="bi bi-whatsapp"></i>
+                            </div>
+                            <div class="contact-card-label">WhatsApp / Telp</div>
+                            <div class="contact-card-value">+62 859-1069-4674</div>
+                            <div class="contact-card-arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="col-sm-6 col-lg-3">
+                        <a href="https://github.com/AchmadWildan" target="_blank"
+                            class="contact-card text-decoration-none">
+                            <div class="contact-card-icon">
+                                <i class="bi bi-github"></i>
+                            </div>
+                            <div class="contact-card-label">GitHub</div>
+                            <div class="contact-card-value">AchmadWildan</div>
+                            <div class="contact-card-arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
+                    </div>
+                    <!-- LinkedIn -->
+                    <div class="col-sm-6 col-lg-3">
+                        <a href="https://www.linkedin.com/in/achmadwildan-/" target="_blank"
+                            class="contact-card text-decoration-none">
+                            <div class="contact-card-icon">
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <div class="contact-card-label">LinkedIn</div>
+                            <div class="contact-card-value">achmadwildan-</div>
+                            <div class="contact-card-arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0">Copyright &copy; Achmad Wildan 2025</div>
+
+    <!-- ==============================
+         FOOTER
+    ============================== -->
+    <footer class="site-footer">
+        <div class="footer-gradient-line"></div>
+        <div class="container px-4 px-lg-5 py-5">
+            <div class="row gy-4">
+                <!-- Brand Column -->
+                <div class="col-lg-4">
+                    <div class="footer-brand mb-3">
+                        <div class="navbar-logo-avatar me-2">AW</div>
+                        <span class="fw-bolder fs-5">Achmad<span class="text-gradient"> Wildan</span></span>
+                    </div>
+                    <p class="text-muted small mb-3">Full-Stack Developer &amp; AI Enthusiast yang berfokus pada
+                        pengembangan sistem industri dan aplikasi.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/amad_wildan/" target="_blank" class="footer-social-icon"
+                            aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/achmadwildan-/" target="_blank" class="footer-social-icon"
+                            aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/AchmadWildan" target="_blank" class="footer-social-icon"
+                            aria-label="GitHub"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-sm-6 col-lg-4">
+                    <h6 class="fw-bolder mb-3 text-uppercase small letter-spacing-1">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#index"><i class="bi bi-house me-2"></i>Home</a></li>
+                        <li><a href="#about"><i class="bi bi-person me-2"></i>About Me</a></li>
+                        <li><a href="#project"><i class="bi bi-grid me-2"></i>Projects</a></li>
+                        <li><a href="#resume"><i class="bi bi-file-earmark-text me-2"></i>Resume</a></li>
+                        <li><a href="#contact"><i class="bi bi-chat me-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="col-sm-6 col-lg-4">
+                    <h6 class="fw-bolder mb-3 text-uppercase small letter-spacing-1">Kontak</h6>
+                    <ul class="footer-links">
+                        <li><a href="mailto:wildan044@gmail.com"><i
+                                    class="bi bi-envelope me-2"></i>wildan044@gmail.com</a></li>
+                        <li><a href="https://wa.me/6285910694674"><i class="bi bi-whatsapp me-2"></i>+62
+                                859-1069-4674</a></li>
+                        <li><span class="text-muted"><i class="bi bi-geo-alt me-2"></i>Mojokerto, Jawa Timur</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom mt-4 pt-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <div class="small text-muted">Copyright &copy;
+                            <script>document.write(new Date().getFullYear())</script> Achmad Wildan. All rights
+                            reserved.
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                        <div class="small text-muted">Built with <span class="text-gradient fw-bold">❤️</span> using
+                            HTML, CSS &amp; JS</div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
