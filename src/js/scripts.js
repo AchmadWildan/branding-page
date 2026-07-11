@@ -1,6 +1,7 @@
 import dashboardQc from '../assets/video/dashboard-qc.mp4';
 import timbanganMp4 from '../assets/video/timbangan.mp4';
 import ControlHormann from '../assets/video/ControlHormann.mp4';
+import chatbot from '../assets/video/chatbot.mp4';
 
 $(document).ready(function () {
 
@@ -11,6 +12,7 @@ $(document).ready(function () {
     'dashboard-qc': dashboardQc,
     'timbangan': timbanganMp4,
     'ControlHormann': ControlHormann,
+    'chatbot': chatbot,
   };
 
   $("#videoModal").on("show.bs.modal", function (event) {
@@ -106,6 +108,7 @@ $(document).ready(function () {
       'Software Developer',
       'Industrial IT',
       'Full-Stack Builder',
+      'AI Engineer',
     ];
     let roleIndex = 0;
     let charIndex = 0;
