@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Achmad Wildan - Software Developer & Data Analyst Portfolio" />
+    <meta name="description"
+        content="Achmad Wildan - Full-Stack Developer untuk sistem industri: dashboard OEE, QC monitoring, aplikasi penimbangan, dan kontrol akses RFID." />
     <meta name="author" content="Achmad Wildan" />
     <title>Achmad Wildan - Portofolio</title>
+    <link rel="icon" href="assets/icon/favicon.ico" />
+    <!-- Open Graph / link preview (WhatsApp, LinkedIn, dll) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://achmadwildan.github.io/branding-page/" />
+    <meta property="og:title" content="Achmad Wildan - Full-Stack Developer · Industrial IT" />
+    <meta property="og:description"
+        content="Membangun sistem IT untuk produksi & gudang: dashboard OEE, QC monitoring, aplikasi penimbangan, dan kontrol akses RFID." />
+    <meta property="og:image" content="https://achmadwildan.github.io/branding-page/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="id_ID" />
+    <meta name="twitter:card" content="summary_large_image" />
     <!-- Custom Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <script type="module" src="./main.js"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap"
         rel="stylesheet" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
@@ -28,11 +43,11 @@
         <!-- ==============================
              NAVBAR
         ============================== -->
-        <nav class="navbar navbar-expand-lg navbar-custom py-3" id="mainNavbar">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3" id="mainNavbar">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand d-flex align-items-center gap-2" href="#index">
                     <div class="navbar-logo-avatar">AW</div>
-                    <span class="fw-bolder text-primary">Achmad<span class="text-gradient">.</span></span>
+                    <span class="fw-bolder">Achmad Wildan</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -43,10 +58,10 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder gap-1">
                         <li class="nav-item"><a class="nav-link nav-link-custom" href="#index"
                                 data-section="index">Home</a></li>
-                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#resume"
-                                data-section="resume">Resume</a></li>
                         <li class="nav-item"><a class="nav-link nav-link-custom" href="#project"
                                 data-section="project">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-custom" href="#resume"
+                                data-section="resume">Resume</a></li>
                         <li class="nav-item"><a class="nav-link nav-link-custom" href="#contact"
                                 data-section="contact">Contact</a></li>
                     </ul>
@@ -63,27 +78,16 @@
                     <!-- Left: Text Content -->
                     <div class="col-lg-6 hero-text-col">
                         <div class="text-center text-lg-start hero-content">
-                            <!-- Availability Badge -->
-                            <div class="d-inline-flex align-items-center gap-2 hero-available-badge mb-3">
-                                <span class="available-dot"></span>
-                                <span class="small fw-semibold">Open to Collaboration</span>
+                            <div class="hero-eyebrow mb-4">
+                                <span class="hero-eyebrow-dot"></span>Terbuka untuk peluang kerja &middot; Mojokerto
                             </div>
 
-                            <!-- Role Badge -->
-                            <div class="badge bg-gradient-primary-to-secondary text-white mb-3 fs-sm px-3 py-2">
-                                <span class="text-uppercase">Software &middot; AI &middot; Development</span>
-                            </div>
+                            <h1 class="hero-name mb-3">Achmad Wildan</h1>
 
-                            <div class="fs-5 fw-light text-muted mb-1">Halo 🙌, saya</div>
-                            <h1 class="display-2 fw-bolder mb-2 lh-1"><span class="text-gradient d-inline">Achmad
-                                    Wildan</span></h1>
-
-                            <!-- Typing animation subtitle -->
-                            <div class="hero-typing-wrap mb-4">
-                                <span class="hero-typing-static fw-semibold text-muted">Seorang </span>
-                                <span class="hero-typing-cursor fw-bold" id="typingText"></span>
-                                <span class="typing-caret">|</span>
-                            </div>
+                            <p class="hero-role mb-3">Full-Stack Developer di bidang <span class="text-accent">Industrial
+                                    IT</span></p>
+                            <p class="hero-lead text-muted mb-4">Saya membangun aplikasi yang dipakai langsung di lantai
+                                produksi, mulai dari dashboard QC, aplikasi penimbangan, sampai kontrol pintu RFID.</p>
 
                             <!-- Tech Stack Icons -->
                             <div class="hero-stack-row mb-4 justify-content-center justify-content-lg-start">
@@ -97,11 +101,11 @@
 
                             <!-- CTA Buttons -->
                             <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
-                                <a class="btn btn-primary btn-lg px-4 py-3 fw-bolder hero-btn-primary" href="#resume">
-                                    <i class="bi bi-file-earmark-person me-2"></i>Resume
+                                <a class="btn btn-primary btn-lg px-4" href="#project">
+                                    Lihat Proyek<i class="bi bi-arrow-right ms-2"></i>
                                 </a>
-                                <a class="btn btn-hero-outline btn-lg px-4 py-3 fw-bolder" href="#project">
-                                    <i class="bi bi-grid me-2"></i>Projects
+                                <a class="btn btn-hero-outline btn-lg px-4" href="#resume">
+                                    <i class="bi bi-file-earmark-person me-2"></i>Resume
                                 </a>
                             </div>
 
@@ -127,18 +131,19 @@
 
                     <!-- Right: Photo -->
                     <div class="col-lg-6 d-flex justify-content-center mt-5 mt-lg-0">
-                        <div class="blob-container">
-                            <div class="blob-shape"></div>
-                            <img class="blob-photo" src="assets/photo/Achmad_Wildan.png" alt="Achmad Wildan">
-                        </div>
+                        <figure class="hero-photo mb-0">
+                            <span class="hero-photo-frame" aria-hidden="true"></span>
+                            <img class="hero-photo-img" src="assets/photo/Achmad_Wildan.webp" alt="Achmad Wildan"
+                                width="433" height="467" fetchpriority="high">
+                            <figcaption class="hero-photo-caption">
+                                <span class="hero-photo-caption-icon"><i class="bi bi-briefcase"></i></span>
+                                <span>
+                                    <strong>Staff IT Digital Application</strong>
+                                    <small>PT. Motasa Indonesia &middot; 2024 – sekarang</small>
+                                </span>
+                            </figcaption>
+                        </figure>
                     </div>
-                </div>
-
-                <!-- Scroll Indicator -->
-                <div class="scroll-indicator text-center">
-                    <a href="#about" class="scroll-indicator-link">
-                        <i class="bi bi-chevron-down scroll-bounce"></i>
-                    </a>
                 </div>
             </div>
         </header>
@@ -155,16 +160,7 @@
                             <div class="section-label mb-3">
                                 <span class="section-label-text">Tentang Saya</span>
                             </div>
-                            <h2 class="display-5 fw-bolder mb-4"><span class="text-gradient d-inline">About Me</span>
-                            </h2>
-
-                            <!-- Persona Tags -->
-                            <div class="persona-tags mb-4 justify-content-center">
-                                <span class="persona-tag"><span class="persona-icon">💡</span> Problem Solver</span>
-                                <span class="persona-tag"><span class="persona-icon">🛠️</span> System Builder</span>
-                                <span class="persona-tag"><span class="persona-icon">📊</span> Data Driven</span>
-                                <span class="persona-tag"><span class="persona-icon">🚀</span> Fast Learner</span>
-                            </div>
+                            <h2 class="section-title mb-4">About Me</h2>
 
                             <!-- Description points -->
                             <div class="about-points text-start mx-auto mb-4">
@@ -208,12 +204,13 @@
         </section>
 
         <!-- ==============================
-             PROJECTS SECTION (UNTOUCHED)
+             PROJECTS SECTION
         ============================== -->
         <section class="py-5" id="project">
-            <div class="container px-5 mb-5">
+            <div class="container px-4 px-lg-5 mb-5">
                 <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    <div class="section-label mb-3"><span class="section-label-text">Proyek</span></div>
+                    <h2 class="section-title mb-0">Projects</h2>
                     <p class="text-muted mt-2 mb-0">Geser untuk melihat semua proyek</p>
                 </div>
 
@@ -233,21 +230,26 @@
 
                             <!-- Card 1 -->
                             <div class="project-slide">
-                                <div class="card project-card shadow rounded-4 border-0 h-100">
+                                <div class="card project-card h-100">
                                     <div class="project-card-img-wrap">
-                                        <img class="img-fluid w-100 img-project" src="assets/photo/dashboard_qc.png"
-                                            alt="Dashboard QC" />
+                                        <span class="project-category project-category-industrial">Industrial</span>
+                                        <img class="img-fluid w-100 img-project" src="assets/photo/dashboard_qc.webp"
+                                            alt="Dashboard Monitoring Input QC" loading="lazy" width="960" height="540" />
                                     </div>
                                     <div class="card-body p-4 d-flex flex-column">
                                         <h2 class="fw-bolder mb-2 project-title">Monitoring Input QC</h2>
-                                        <p class="mb-3 limit-text flex-grow-1">Dashboard hasil input Quality Control
-                                            (QC) pada area produksi digunakan untuk memantau hasil inspeksi produk
-                                            secara real-time.</p>
+                                        <dl class="project-points flex-grow-1 mb-3">
+                                            <div><dt>Masalah</dt><dd>Hasil inspeksi Quality Control di area produksi baru diketahui setelah direkap manual.</dd></div>
+                                            <div><dt>Solusi</dt><dd>Dashboard web yang menampilkan hasil input QC per line produksi secara real-time di layar TV area produksi.</dd></div>
+                                            <div><dt>Hasil</dt><dd>Supervisor dan tim QC dapat memantau temuan inspeksi saat itu juga dan menindaklanjuti lebih cepat.</dd></div>
+                                        </dl>
                                         <div class="d-flex flex-wrap gap-2 mb-3">
-                                            <span class="badge bg-secondary-bs p-2">#MySQL</span>
-                                            <span class="badge bg-secondary-bs p-2">#Laravel</span>
-                                            <span class="badge bg-secondary-bs p-2">#Soft UI</span>
+                                            <span class="tag-chip">MySQL</span>
+                                            <span class="tag-chip">Laravel</span>
+                                            <span class="tag-chip">Soft UI</span>
                                         </div>
+                                        <p class="project-note mb-2"><i class="bi bi-lock me-1"></i>Proyek internal
+                                            perusahaan, kode bersifat rahasia</p>
                                         <button type="button" class="btn btn-primary btn-video w-100 mt-auto"
                                             data-video="dashboard-qc" data-bs-toggle="modal"
                                             data-bs-target="#videoModal" data-bs-keyboard="true">
@@ -259,21 +261,26 @@
 
                             <!-- Card 2 -->
                             <div class="project-slide">
-                                <div class="card project-card shadow rounded-4 border-0 h-100">
+                                <div class="card project-card h-100">
                                     <div class="project-card-img-wrap">
-                                        <img class="img-fluid w-100 img-project" src="assets/photo/timbangan.png"
-                                            alt="Auto Weighing App" />
+                                        <span class="project-category project-category-industrial">Industrial</span>
+                                        <img class="img-fluid w-100 img-project" src="assets/photo/timbangan.webp"
+                                            alt="Auto Weighing App" loading="lazy" width="960" height="743" />
                                     </div>
                                     <div class="card-body p-4 d-flex flex-column">
                                         <h2 class="fw-bolder mb-2 project-title">Auto Weighing App</h2>
-                                        <p class="mb-3 limit-text flex-grow-1">Aplikasi ini dikembangkan untuk
-                                            mempermudah proses penimbangan produk secara digital, menggantikan metode
-                                            pencatatan yang sebelumnya dilakukan secara manual.</p>
+                                        <dl class="project-points flex-grow-1 mb-3">
+                                            <div><dt>Masalah</dt><dd>Hasil penimbangan produk dicatat manual sehingga lambat dan rawan salah tulis.</dd></div>
+                                            <div><dt>Solusi</dt><dd>Aplikasi desktop yang membaca data langsung dari timbangan digital, mengecek berat terhadap batas atas/bawah, dan menyimpannya otomatis ke database.</dd></div>
+                                            <div><dt>Hasil</dt><dd>Pencatatan manual tergantikan, produk di luar toleransi langsung tercatat sebagai reject, dan data siap direkap per shift.</dd></div>
+                                        </dl>
                                         <div class="d-flex flex-wrap gap-2 mb-3">
-                                            <span class="badge bg-secondary-bs p-2">#MySQL</span>
-                                            <span class="badge bg-secondary-bs p-2">#VB.Net</span>
-                                            <span class="badge bg-secondary-bs p-2">#Python</span>
+                                            <span class="tag-chip">MySQL</span>
+                                            <span class="tag-chip">VB.Net</span>
+                                            <span class="tag-chip">Python</span>
                                         </div>
+                                        <p class="project-note mb-2"><i class="bi bi-lock me-1"></i>Proyek internal
+                                            perusahaan, kode bersifat rahasia</p>
                                         <button type="button" class="btn btn-primary w-100 mt-auto"
                                             data-video="timbangan" data-bs-toggle="modal" data-bs-target="#videoModal"
                                             data-bs-keyboard="true">
@@ -285,76 +292,27 @@
 
                             <!-- Card 3 -->
                             <div class="project-slide">
-                                <div class="card project-card shadow rounded-4 border-0 h-100">
+                                <div class="card project-card h-100">
                                     <div class="project-card-img-wrap">
-                                        <img class="img-fluid w-100 img-project" src="assets/photo/stories_app.png"
-                                            alt="Stories App" />
-                                    </div>
-                                    <div class="card-body p-4 d-flex flex-column">
-                                        <h2 class="fw-bolder mb-2 project-title">Stories App</h2>
-                                        <p class="mb-3 limit-text flex-grow-1">Stories App adalah aplikasi berbasis web
-                                            untuk membuat, menampilkan, dan menghapus cerita. Aplikasi ini mendukung
-                                            unggah gambar, menyimpan cerita favorit, serta integrasi peta interaktif.
-                                            Proyek ini merupakan hasil submissions kelas Front-End Development pada
-                                            lanjutan beasiswa IDCamp - Dicoding 2025 tingkat mahir.</p>
-                                        <div class="d-flex flex-wrap gap-2 mb-3">
-                                            <span class="badge bg-secondary-bs p-2">#Restful API</span>
-                                            <span class="badge bg-secondary-bs p-2">#Auth</span>
-                                            <span class="badge bg-secondary-bs p-2">#Leaflet</span>
-                                        </div>
-                                        <a class="btn btn-primary w-100 mt-auto"
-                                            href="https://achmadwildan.github.io/stories-project-idcamp/"
-                                            target="_blank">
-                                            <i class="bi bi-box-arrow-up-right me-2"></i>Demo Project
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Card 4 -->
-                            <div class="project-slide">
-                                <div class="card project-card shadow rounded-4 border-0 h-100">
-                                    <div class="project-card-img-wrap">
-                                        <img class="img-fluid w-100 img-project" src="assets/photo/notes_app.png"
-                                            alt="Notes App" />
-                                    </div>
-                                    <div class="card-body p-4 d-flex flex-column">
-                                        <h2 class="fw-bolder mb-2 project-title">Notes App</h2>
-                                        <p class="mb-3 limit-text flex-grow-1">Notes App merupakan aplikasi pencatatan
-                                            berbasis web dengan fitur CRUD, pencarian data, serta penyimpanan lokal.
-                                            Proyek ini merupakan hasil submissions kelas Front-End Development pada
-                                            beasiswa IDCamp - Dicoding 2024 tingkat menengah.</p>
-                                        <div class="d-flex flex-wrap gap-2 mb-3">
-                                            <span class="badge bg-secondary-bs p-2">#Restful API</span>
-                                            <span class="badge bg-secondary-bs p-2">#Javascript</span>
-                                            <span class="badge bg-secondary-bs p-2">#HTML</span>
-                                        </div>
-                                        <a class="btn btn-primary w-100 mt-auto"
-                                            href="https://achmadwildan.github.io/IDCamp2024-Menengah-NotesApp/"
-                                            target="_blank">
-                                            <i class="bi bi-box-arrow-up-right me-2"></i>Demo Project
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Card 5 -->
-                            <div class="project-slide">
-                                <div class="card project-card shadow rounded-4 border-0 h-100">
-                                    <div class="project-card-img-wrap">
-                                        <img class="img-fluid w-100 img-project" src="assets/photo/horman.png"
-                                            alt="Notes App" />
+                                        <span class="project-category project-category-industrial">Industrial</span>
+                                        <img class="img-fluid w-100 img-project" src="assets/photo/horman.webp"
+                                            alt="Aplikasi Kontrol Pintu Otomatis" loading="lazy" width="960"
+                                            height="570" />
                                     </div>
                                     <div class="card-body p-4 d-flex flex-column">
                                         <h2 class="fw-bolder mb-2 project-title">Kontrol Pintu Otomatis</h2>
-                                        <p class="mb-3 limit-text flex-grow-1">Kontrol Pintu Otomatis merupakan aplikasi
-                                            berbasis desktop dengan fitur kontrol pintu yang dikendalikan oleh admin dan
-                                            sistem interlock untuk keamanan.</p>
+                                        <dl class="project-points flex-grow-1 mb-3">
+                                            <div><dt>Masalah</dt><dd>Akses pintu area produksi perlu dikendalikan agar aman dan tidak dibuka bersamaan.</dd></div>
+                                            <div><dt>Solusi</dt><dd>Aplikasi desktop berbasis RFID untuk mengontrol pintu dari admin, dilengkapi sistem interlock.</dd></div>
+                                            <div><dt>Hasil</dt><dd>Akses pintu terkontrol terpusat dan interlock mencegah pintu terbuka di saat yang tidak aman.</dd></div>
+                                        </dl>
                                         <div class="d-flex flex-wrap gap-2 mb-3">
-                                            <span class="badge bg-secondary-bs p-2">#VB.Net</span>
-                                            <span class="badge bg-secondary-bs p-2">#IoT</span>
-                                            <span class="badge bg-secondary-bs p-2">#RFID</span>
+                                            <span class="tag-chip">VB.Net</span>
+                                            <span class="tag-chip">IoT</span>
+                                            <span class="tag-chip">RFID</span>
                                         </div>
+                                        <p class="project-note mb-2"><i class="bi bi-lock me-1"></i>Proyek internal
+                                            perusahaan, kode bersifat rahasia</p>
                                         <button type="button" class="btn btn-primary w-100 mt-auto"
                                             data-video="ControlHormann" data-bs-toggle="modal"
                                             data-bs-target="#videoModal" data-bs-keyboard="true">
@@ -364,12 +322,13 @@
                                 </div>
                             </div>
 
-                            <!-- Card 6 -->
+                            <!-- Card 4 -->
                             <div class="project-slide">
-                                <div class="card project-card shadow rounded-4 border-0 h-100">
+                                <div class="card project-card h-100">
                                     <div class="project-card-img-wrap">
-                                        <img class="img-fluid w-100 img-project" src="assets/photo/dashboard_prod.jpeg"
-                                            alt="Dashboard Production AI" />
+                                        <span class="project-category project-category-industrial">Industrial</span>
+                                        <img class="img-fluid w-100 img-project" src="assets/photo/dashboard_prod.webp"
+                                            alt="Dashboard Production AI" loading="lazy" width="960" height="513" />
                                     </div>
                                     <div class="card-body p-4 d-flex flex-column">
                                         <h2 class="fw-bolder mb-2 project-title">Dashboard Production AI</h2>
@@ -379,15 +338,84 @@
                                             fitur report dan visualisasi data yang mencakup rekap harian produksi,
                                             live status mesin dan kontrol pintu, serta OEE pada setiap Plant.</p>
                                         <div class="d-flex flex-wrap gap-2 mb-3">
-                                            <span class="badge bg-secondary-bs p-2">#AI</span>
-                                            <span class="badge bg-secondary-bs p-2">#Python</span>
-                                            <span class="badge bg-secondary-bs p-2">#Laravel</span>
+                                            <span class="tag-chip">AI</span>
+                                            <span class="tag-chip">Python</span>
+                                            <span class="tag-chip">Laravel</span>
                                         </div>
                                         <!-- <button type="button" class="btn btn-primary w-100 mt-auto"
                                             data-video="ControlHormann" data-bs-toggle="modal"
                                             data-bs-target="#videoModal" data-bs-keyboard="true">
                                             <i class="bi bi-play-circle me-2"></i>Video Demo Project
                                         </button> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div class="project-slide">
+                                <div class="card project-card h-100">
+                                    <div class="project-card-img-wrap">
+                                        <span class="project-category project-category-learning">Learning</span>
+                                        <img class="img-fluid w-100 img-project" src="assets/photo/stories_app.webp"
+                                            alt="Stories App" loading="lazy" width="960" height="481" />
+                                    </div>
+                                    <div class="card-body p-4 d-flex flex-column">
+                                        <h2 class="fw-bolder mb-2 project-title">Stories App</h2>
+                                        <p class="mb-3 limit-text flex-grow-1">Aplikasi web untuk membuat, menampilkan,
+                                            dan menghapus cerita dengan autentikasi RESTful API, unggah gambar, cerita
+                                            favorit, dan peta interaktif Leaflet. Submission kelas Front-End
+                                            Development tingkat Mahir, beasiswa IDCamp - Dicoding 2025.</p>
+                                        <div class="d-flex flex-wrap gap-2 mb-3">
+                                            <span class="tag-chip">Restful API</span>
+                                            <span class="tag-chip">Auth</span>
+                                            <span class="tag-chip">Leaflet</span>
+                                        </div>
+                                        <div class="d-flex gap-2 mt-auto">
+                                            <a class="btn btn-primary flex-grow-1"
+                                                href="https://achmadwildan.github.io/stories-project-idcamp/"
+                                                target="_blank" rel="noopener">
+                                                <i class="bi bi-box-arrow-up-right me-2"></i>Demo
+                                            </a>
+                                            <a class="btn btn-outline-primary flex-grow-1"
+                                                href="https://github.com/AchmadWildan/stories-project-idcamp"
+                                                target="_blank" rel="noopener">
+                                                <i class="bi bi-github me-2"></i>Source
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 6 -->
+                            <div class="project-slide">
+                                <div class="card project-card h-100">
+                                    <div class="project-card-img-wrap">
+                                        <span class="project-category project-category-learning">Learning</span>
+                                        <img class="img-fluid w-100 img-project" src="assets/photo/notes_app.webp"
+                                            alt="Notes App" loading="lazy" width="960" height="606" />
+                                    </div>
+                                    <div class="card-body p-4 d-flex flex-column">
+                                        <h2 class="fw-bolder mb-2 project-title">Notes App</h2>
+                                        <p class="mb-3 limit-text flex-grow-1">Aplikasi pencatatan berbasis web dengan
+                                            fitur CRUD, pencarian data, dan penyimpanan lokal. Submission kelas
+                                            Front-End Development tingkat Menengah, beasiswa IDCamp - Dicoding 2024.</p>
+                                        <div class="d-flex flex-wrap gap-2 mb-3">
+                                            <span class="tag-chip">Restful API</span>
+                                            <span class="tag-chip">Javascript</span>
+                                            <span class="tag-chip">HTML</span>
+                                        </div>
+                                        <div class="d-flex gap-2 mt-auto">
+                                            <a class="btn btn-primary flex-grow-1"
+                                                href="https://achmadwildan.github.io/IDCamp2024-Menengah-NotesApp/"
+                                                target="_blank" rel="noopener">
+                                                <i class="bi bi-box-arrow-up-right me-2"></i>Demo
+                                            </a>
+                                            <a class="btn btn-outline-primary flex-grow-1"
+                                                href="https://github.com/AchmadWildan/IDCamp2024-Menengah-NotesApp"
+                                                target="_blank" rel="noopener">
+                                                <i class="bi bi-github me-2"></i>Source
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -427,7 +455,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="text-center mb-5">
                     <div class="section-label mb-3"><span class="section-label-text">Karir & Pendidikan</span></div>
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+                    <h2 class="section-title mb-0">Resume</h2>
                 </div>
 
                 <div class="row gx-5 justify-content-center">
@@ -445,7 +473,7 @@
                         <!-- === EXPERIENCE TIMELINE === -->
                         <div class="resume-group mb-5">
                             <div class="resume-group-header mb-4">
-                                <div class="resume-group-icon bg-gradient-primary"><i class="bi bi-briefcase-fill"></i>
+                                <div class="resume-group-icon"><i class="bi bi-briefcase-fill"></i>
                                 </div>
                                 <h2 class="fw-bolder mb-0">Experience</h2>
                             </div>
@@ -521,7 +549,7 @@
                         <!-- === EDUCATION TIMELINE === -->
                         <div class="resume-group mb-5">
                             <div class="resume-group-header mb-4">
-                                <div class="resume-group-icon bg-gradient-secondary"><i
+                                <div class="resume-group-icon"><i
                                         class="bi bi-mortarboard-fill"></i></div>
                                 <h2 class="fw-bolder mb-0">Education</h2>
                             </div>
@@ -568,7 +596,7 @@
                         <!-- === SKILLS === -->
                         <div class="resume-group">
                             <div class="resume-group-header mb-4">
-                                <div class="resume-group-icon bg-gradient-primary"><i class="bi bi-tools"></i></div>
+                                <div class="resume-group-icon"><i class="bi bi-tools"></i></div>
                                 <h2 class="fw-bolder mb-0">Languages &amp; Tools</h2>
                             </div>
 
@@ -666,7 +694,7 @@
                 <!-- Hero CTA -->
                 <div class="contact-hero text-center mb-5">
                     <div class="section-label mb-3"><span class="section-label-text">Get In Touch</span></div>
-                    <h1 class="display-5 fw-bolder mb-3">Tertarik Bekerja <span class="text-gradient">Sama?</span></h1>
+                    <h2 class="section-title mb-3">Tertarik Bekerja Sama?</h2>
                     <p class="lead text-muted mb-4 mx-auto" style="max-width:520px">Saya selalu terbuka untuk peluang
                         baru, kolaborasi, atau sekadar ngobrol tentang teknologi. Jangan ragu untuk menghubungi saya!
                     </p>
@@ -741,10 +769,10 @@
                 <div class="col-lg-4">
                     <div class="footer-brand mb-3">
                         <div class="navbar-logo-avatar me-2">AW</div>
-                        <span class="fw-bolder fs-5">Achmad<span class="text-gradient"> Wildan</span></span>
+                        <span class="fw-bolder fs-5">Achmad Wildan</span>
                     </div>
-                    <p class="text-muted small mb-3">Full-Stack Developer &amp; AI Enthusiast yang berfokus pada
-                        pengembangan sistem industri dan aplikasi.</p>
+                    <p class="text-muted small mb-3">Full-Stack Developer yang membangun aplikasi untuk produksi,
+                        gudang, dan quality control.</p>
                     <div class="footer-socials">
                         <a href="https://www.instagram.com/amad_wildan/" target="_blank" class="footer-social-icon"
                             aria-label="Instagram"><i class="bi bi-instagram"></i></a>
@@ -784,13 +812,12 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center text-md-start">
                         <div class="small text-muted">Copyright &copy;
-                            <script>document.write(new Date().getFullYear())</script> Achmad Wildan. All rights
+                            <span id="copyrightYear">2026</span> Achmad Wildan. All rights
                             reserved.
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
-                        <div class="small text-muted">Built with <span class="text-gradient fw-bold">❤️</span> using
-                            HTML, CSS &amp; JS</div>
+                        <div class="small text-muted">Dibuat dengan HTML, CSS, JavaScript &amp; Vite</div>
                     </div>
                 </div>
             </div>

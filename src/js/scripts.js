@@ -29,13 +29,20 @@ $(document).ready(function () {
   });
 
   /* ----------------------------------------
+     FOOTER YEAR
+  ---------------------------------------- */
+  $("#copyrightYear").text(new Date().getFullYear());
+
+  /* ----------------------------------------
      LIMIT TEXT (read more)
   ---------------------------------------- */
   $(".limit-text").each(function () {
     let max = 250;
-    let fullText = $(this).text().trim();
-    if (fullText.length > max) {
-      let shortText = fullText.substring(0, max) + "...";
+    let plainText = $(this).text().replace(/\s+/g, " ").trim();
+    if (plainText.length > max) {
+      // full version keeps the original markup (e.g. <strong> labels)
+      let fullText = $(this).html().trim();
+      let shortText = plainText.substring(0, max) + "...";
       let moreLink = $('<a href="#" class="more-link"> Selengkapnya..</a>');
       $(this).data("full-text", fullText);
       $(this).data("short-text", shortText);
@@ -98,55 +105,11 @@ $(document).ready(function () {
   updateScrollSpy();
 
   /* ----------------------------------------
-     TYPING ANIMATION (Hero)
-  ---------------------------------------- */
-  const typingEl = document.getElementById('typingText');
-  if (typingEl) {
-    const roles = [
-      'Software Developer',
-      'Industrial IT',
-      'Full-Stack Builder',
-    ];
-    let roleIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    const SPEED_TYPE = 90;
-    const SPEED_DELETE = 50;
-    const PAUSE_END = 1800;
-    const PAUSE_START = 300;
-
-    function typeLoop() {
-      const currentRole = roles[roleIndex];
-      if (!isDeleting) {
-        typingEl.textContent = currentRole.slice(0, charIndex + 1);
-        charIndex++;
-        if (charIndex === currentRole.length) {
-          isDeleting = true;
-          setTimeout(typeLoop, PAUSE_END);
-          return;
-        }
-        setTimeout(typeLoop, SPEED_TYPE);
-      } else {
-        typingEl.textContent = currentRole.slice(0, charIndex - 1);
-        charIndex--;
-        if (charIndex === 0) {
-          isDeleting = false;
-          roleIndex = (roleIndex + 1) % roles.length;
-          setTimeout(typeLoop, PAUSE_START);
-          return;
-        }
-        setTimeout(typeLoop, SPEED_DELETE);
-      }
-    }
-    setTimeout(typeLoop, 800);
-  }
-
-  /* ----------------------------------------
      SCROLL REVEAL
   ---------------------------------------- */
   // Add reveal class to elements we want animated
   const revealTargets = document.querySelectorAll(
-    '.timeline-item, .skills-card, .contact-card, .about-point, .persona-tag, .resume-group'
+    '.timeline-item, .skills-card, .contact-card, .about-point, .resume-group'
   );
   revealTargets.forEach(el => el.classList.add('reveal'));
 
@@ -287,7 +250,12 @@ $(document).ready(function () {
   document.getElementById('videoModal')?.addEventListener('show.bs.modal', () => stopAutoPlay());
   document.getElementById('videoModal')?.addEventListener('hidden.bs.modal', () => startAutoPlay());
 
+  // Only react to arrow keys while the Projects section is on screen
+  const projectSection = document.getElementById('project');
   document.addEventListener('keydown', (e) => {
+    const rect = projectSection.getBoundingClientRect();
+    if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+    if (document.querySelector('.modal.show')) return;
     if (e.key === 'ArrowLeft') { goTo(currentIndex - 1); resetAutoPlay(); }
     if (e.key === 'ArrowRight') { goTo(currentIndex + 1); resetAutoPlay(); }
   });

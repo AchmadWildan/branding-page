@@ -8,6 +8,7 @@ export default defineConfig({
 
   build: {
     outDir: '../docs', // output folder hasil build
+    emptyOutDir: true, // hapus file build lama (outDir di luar root tidak dikosongkan otomatis)
     sourcemap: true,   // memudahkan debugging
   },
 
